@@ -87,3 +87,18 @@ header h1 {
     text-decoration: none;
     cursor: pointer;
 }
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background: linear-gradient(45deg, #ff6b6b, #f7a8b8, #d6a5d6, #9a66d5);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
