@@ -16,8 +16,8 @@ function openModal(content) {
 whatsappTile.addEventListener('click', function() {
     const whatsappDetails = `
         <h3>WhatsApp</h3>
-        <p>Phone Number: <a href="tel:+1234567890">+1234567890</a></p>
-        <p><a href="https://wa.me/1234567890" target="_blank">Click here to chat on WhatsApp</a></p>
+        <p>Phone Number: <a href="tel:+918754641231">+918754641231</a></p>
+        <p><a href="https://wa.me/918754641231" target="_blank">Click here to chat on WhatsApp</a></p>
     `;
     openModal(whatsappDetails);
 });
@@ -25,7 +25,7 @@ whatsappTile.addEventListener('click', function() {
 instagramTile.addEventListener('click', function() {
     const instagramDetails = `
         <h3>Instagram</h3>
-        <p>Instagram Profile: <a href="https://www.instagram.com/yourusername/" target="_blank">yourusername</a></p>
+        <p>Instagram Profile: <a href="https://www.instagram.com/_i_am__loki___/profilecard/?igsh=MTNvY255dmx6Mzg3ZQ==/" target="_blank">_i_am__loki__</a></p>
     `;
     openModal(instagramDetails);
 });
@@ -33,7 +33,7 @@ instagramTile.addEventListener('click', function() {
 youtubeTile.addEventListener('click', function() {
     const youtubeDetails = `
         <h3>YouTube</h3>
-        <p>YouTube Channel: <a href="https://www.youtube.com/channel/yourchannel" target="_blank">Your Channel</a></p>
+        <p>YouTube Channel: <a href="https://youtube.com/@packofwolfs7?si=Uavuca1Uh_8zGnp3" target="_blank">packofwolfs7</a></p>
     `;
     openModal(youtubeDetails);
 });
