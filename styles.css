@@ -85,12 +85,59 @@ h1 {
     text-decoration: none;
 }
 
-/* Styling for the page footer */
-footer {
-    position: absolute;
-    bottom: 20px;
+/* Popup modal styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
     width: 100%;
-    color: #fff;
-    font-size: 14px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
     text-align: center;
+    width: 50%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#popup-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#popup-details {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Close button style */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+    color: #ff5733;
+}
+
+/* Fade in animation for the popup */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
