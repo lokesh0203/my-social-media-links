@@ -25,7 +25,7 @@ whatsappTile.addEventListener('click', function() {
 instagramTile.addEventListener('click', function() {
     const instagramDetails = `
         <h3>Instagram</h3>
-        <p>Instagram Profile: <a href="https://www.instagram.com/_i_am__loki___/profilecard/?igsh=MTNvY255dmx6Mzg3ZQ==/" target="_blank">yourusername</a></p>
+        <p>Instagram Profile: <a href="https://www.instagram.com/_i_am__loki___/profilecard/?igsh=MTNvY255dmx6Mzg3ZQ==/" target="_blank">_i_am__loki__</a></p>
     `;
     openModal(instagramDetails);
 });
