@@ -1,113 +1,108 @@
-/* General Styles */
+/* Basic layout and styling for the page */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f8ff;  /* Light background color */
-    text-align: center;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;  /* Full screen height */
-    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
 
 h1 {
-    margin-top: 50px;
-    color: #333;
-    font-size: 36px;
-    letter-spacing: 1px;
-    font-weight: 700;
+    margin: 0;
 }
 
-/* Tile container - Flexbox for layout */
-.tile-container {
+.tiles {
     display: flex;
-    justify-content: center;  /* Centers the tiles horizontally */
-    align-items: center;  /* Centers the tiles vertically (in case there's not enough content below) */
-    gap: 30px;
-    flex-wrap: wrap;  /* Allows tiles to wrap to the next row if there's not enough space */
-    margin-top: 40px;
+    justify-content: space-around;
+    margin: 20px;
 }
 
-/* Individual tile styles */
 .tile {
-    width: 150px;
-    height: 150px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    color: #fff;
     text-align: center;
     padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Initial shadow */
 }
 
 .tile:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); /* Grow the tile when hovered */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+    transition: all 0.3s ease; /* Smooth transition on hover */
 }
 
-/* Tile content (image and text) */
-.tile img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.tile-name {
-    font-size: 16px;
+.tile h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    font-size: 18px;
     font-weight: bold;
-    color: #333;
+    transition: opacity 0.3s ease; /* Smooth fade-in/out of text */
+    opacity: 0; /* Start with hidden text */
 }
 
-/* Popup modal styles */
-.popup {
+.tile:hover h2 {
+    opacity: 1; /* Fade-in text on hover */
+}
+
+/* Specific background images for each tile */
+#whatsappTile {
+    background-image: url('whatsapp-background.jpg');
+}
+
+#instagramTile {
+    background-image: url('instagram-background.jpg');
+}
+
+#youtubeTile {
+    background-image: url('youtube-background.jpg');
+}
+
+.tile-icon {
+    display: none; /* Hides the individual icons if you prefer background-only */
+}
+
+/* Modal styles */
+.modal {
     display: none;
     position: fixed;
-    z-index: 1000;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
 }
 
-.popup-content {
+.modal-content {
     background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 80%;
     text-align: center;
-    width: 50%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-#popup-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-#popup-details {
-    font-size: 18px;
-    color: #555;
-}
-
-/* Close button style */
-.close-btn {
+.close {
+    font-size: 30px;
+    font-weight: bold;
     position: absolute;
     top: 10px;
-    right: 10px;
-    font-size: 30px;
+    right: 20px;
     cursor: pointer;
-    color: #333;
-}
-
-.close-btn:hover {
-    color: #ff5733;
 }
