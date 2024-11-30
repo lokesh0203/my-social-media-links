@@ -61,15 +61,15 @@ h1 {
 
 /* Specific background images for each tile */
 #whatsappTile {
-    background-image: url('whatsapp.png');
+    background-image: url('whatsapp-icon-design_23-2147900842.jpeg');
 }
 
 #instagramTile {
-    background-image: url('instagram.png');
+    background-image: url('instagram-icon_1057-2227.jpeg');
 }
 
 #youtubeTile {
-    background-image: url('youtube.png');
+    background-image: url('red-youtube-logo-social-media-logo_197792-1803.jpeg');
 }
 
 .tile-icon {
