@@ -102,7 +102,7 @@ h1 {
     font-size: 30px;
     font-weight: bold;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    center: 10px;
+    center: 20px;
     cursor: pointer;
 }
